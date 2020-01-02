@@ -5,14 +5,14 @@
 
 * This project contains DB files and usesd mysql
 
-* [Includes the following features]
+## [Includes the following features]
 
-  1. Login<br>
-  2. Sign up for membership<br>
-  3. Introduction<br>
-  4. Order<br>
-  5. Recipe<br>
-  6.Recipe vedio<br>
+1. Login<br>
+2. Sign up for membership<br>
+3. Introduction<br>
+4. Order<br>
+5. Recipe<br>
+6.Recipe vedio<br>
 7.QnA<br>
 8.freeBoard<br>
 9.Creating postings<br>
