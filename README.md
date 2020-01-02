@@ -12,14 +12,14 @@
 3. Introduction<br>
 4. Order<br>
 5. Recipe<br>
-6.Recipe vedio<br>
-7.QnA<br>
-8.freeBoard<br>
-9.Creating postings<br>
-10.Viewing postings<br>
-11.Reply to the Bulletin Board<br>
-12.Modifying postings<br>
-13.Delete posting
+6. Recipe vedio<br>
+7. QnA<br>
+8. freeBoard<br>
+9. Creating postings<br>
+10. Viewing postings<br>
+11. Reply to the Bulletin Board<br>
+12. Modifying postings<br>
+13. Delete posting
 
 # [Start Bootstrap](http://startbootstrap.com/) - [Modern Business](http://startbootstrap.com/template-overviews/modern-business/)
 
