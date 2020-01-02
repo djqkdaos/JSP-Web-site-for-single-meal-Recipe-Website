@@ -1,7 +1,7 @@
 #[JSP-Web-site-for-single-meal-Recipe-Website]
 * This project contains DB files and usesd mysql
 * Includes the following features:
-<p>1. Login</p>
+<p styile="text-align:center">1. Login</p>
 <p>2. Sign up for membership</p>
 <p>3. Introduction</p>
 <p>4. Order</p>
