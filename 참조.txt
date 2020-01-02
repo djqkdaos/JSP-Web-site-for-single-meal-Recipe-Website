@@ -1,0 +1,11 @@
+input 태그의 다양한 스타일 설정 http://egloos.zum.com/nis7/v/1988543
+
+
+주문목록
+회원 아이디,주문 번호, 배송4개, 메뉴 번호
+
+session.removeAttribute("s_name2");
+
+session.removeAttribute("s_name2");
+
+세션값삭제  출처: http://wickedmagic.tistory.com/131

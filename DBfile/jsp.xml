@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.5.2
+- https://www.phpmyadmin.net
+-
+- Host: localhost
+- 생성 시간: 18-01-14 23:29
+- 서버 버전: 10.1.9-MariaDB
+- PHP 버전: 7.0.1
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="http://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="jsp" collation="utf8_general_ci" charset="utf8">
+            <pma:table name="admin">
+                CREATE TABLE `admin` (
+                  `ID` varchar(20) NOT NULL,
+                  `pass` varchar(20) NOT NULL,
+                  PRIMARY KEY (`ID`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+            </pma:table>
+            <pma:table name="bill">
+                CREATE TABLE `bill` (
+                  `bill` int(50) NOT NULL AUTO_INCREMENT,
+                  `ID` varchar(20) CHARACTER SET utf8mb4 NOT NULL,
+                  `name` varchar(20) CHARACTER SET utf8mb4 NOT NULL,
+                  `tel` varchar(20) CHARACTER SET utf8mb4 NOT NULL,
+                  `address` varchar(50) CHARACTER SET utf8mb4 NOT NULL,
+                  `memo` varchar(50) CHARACTER SET utf8mb4 NOT NULL,
+                  `menu` varchar(20) CHARACTER SET utf8mb4 NOT NULL,
+                  `price` varchar(20) CHARACTER SET utf8mb4 NOT NULL,
+                  `ingredients` varchar(50) CHARACTER SET utf8mb4 NOT NULL,
+                  `image` varchar(30) CHARACTER SET utf8mb4 NOT NULL,
+                  PRIMARY KEY (`bill`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="board">
+                CREATE TABLE `board` (
+                  `idx` int(11) NOT NULL AUTO_INCREMENT,
+                  `title` varchar(50) CHARACTER SET utf8 NOT NULL,
+                  `writer` varchar(30) CHARACTER SET utf8 NOT NULL,
+                  `regdate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                  `count` int(11) NOT NULL,
+                  `content` varchar(500) CHARACTER SET utf8 NOT NULL,
+                  PRIMARY KEY (`idx`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=58 DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="main_board_reply">
+                CREATE TABLE `main_board_reply` (
+                  `seq` int(11) NOT NULL AUTO_INCREMENT,
+                  `main_seq` int(11) DEFAULT NULL,
+                  `title` varchar(11) DEFAULT NULL,
+                  `name` varchar(11) DEFAULT NULL,
+                  `date` date DEFAULT NULL,
+                  `count` int(11) DEFAULT NULL,
+                  `content` varchar(200) DEFAULT NULL,
+                  PRIMARY KEY (`seq`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+            </pma:table>
+            <pma:table name="menu">
+                CREATE TABLE `menu` (
+                  `menunum` int(50) NOT NULL AUTO_INCREMENT,
+                  `menu` varchar(30) CHARACTER SET utf8mb4 NOT NULL,
+                  `mprice` varchar(20) CHARACTER SET utf8mb4 NOT NULL,
+                  `mingredients` varchar(100) CHARACTER SET utf8mb4 NOT NULL,
+                  `mimage` varchar(200) CHARACTER SET utf8mb4 NOT NULL,
+                  PRIMARY KEY (`menunum`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="recipe">
+                CREATE TABLE `recipe` (
+                  `recipe` int(100) NOT NULL AUTO_INCREMENT,
+                  `price` varchar(20) CHARACTER SET utf8mb4 NOT NULL,
+                  `title` varchar(30) CHARACTER SET utf8mb4 NOT NULL,
+                  `ingredients` varchar(300) CHARACTER SET utf8mb4 NOT NULL,
+                  `method` varchar(500) CHARACTER SET utf8mb4 NOT NULL,
+                  `image` varchar(30) CHARACTER SET utf8mb4 NOT NULL,
+                  PRIMARY KEY (`recipe`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="user">
+                CREATE TABLE `user` (
+                  `name` varchar(50) CHARACTER SET utf8mb4 NOT NULL,
+                  `id` varchar(50) CHARACTER SET utf8mb4 NOT NULL,
+                  `password` varchar(50) CHARACTER SET utf8mb4 NOT NULL,
+                  `nic` varchar(50) CHARACTER SET utf8mb4 NOT NULL,
+                  `telNo` varchar(50) CHARACTER SET utf8mb4 NOT NULL,
+                  `eMail` varchar(50) CHARACTER SET utf8mb4 NOT NULL,
+                  `address` varchar(50) CHARACTER SET utf8mb4 NOT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - 데이터베이스: 'jsp'
+    -->
+    <database name="jsp">
+        <!-- 테이블 admin -->
+        <table name="admin">
+            <column name="ID">jsp</column>
+            <column name="pass">jsp</column>
+        </table>
+        <!-- 테이블 bill -->
+        <table name="bill">
+            <column name="bill">14</column>
+            <column name="ID">rudtjr</column>
+            <column name="name">김경석</column>
+            <column name="tel">01050380554</column>
+            <column name="address">우리집</column>
+            <column name="memo">그냥주새요</column>
+            <column name="menu">떡볶이</column>
+            <column name="price">5000</column>
+            <column name="ingredients">떡,고추장,파</column>
+            <column name="image">image1.jpg</column>
+        </table>
+        <table name="bill">
+            <column name="bill">15</column>
+            <column name="ID">rudtjr</column>
+            <column name="name">김경석</column>
+            <column name="tel">01050380554</column>
+            <column name="address">우리지</column>
+            <column name="memo">추가주문</column>
+            <column name="menu">볶음밥</column>
+            <column name="price">5000</column>
+            <column name="ingredients">파,밥,햄</column>
+            <column name="image">image2.jpg</column>
+        </table>
+        <table name="bill">
+            <column name="bill">16</column>
+            <column name="ID">gdool02</column>
+            <column name="name">조영천</column>
+            <column name="tel">01042750698</column>
+            <column name="address">양정</column>
+            <column name="memo">화이또~</column>
+            <column name="menu">볶음밥</column>
+            <column name="price">5000</column>
+            <column name="ingredients">파,밥,햄</column>
+            <column name="image">image2.jpg</column>
+        </table>
+        <table name="bill">
+            <column name="bill">17</column>
+            <column name="ID">gdool02</column>
+            <column name="name">김남억</column>
+            <column name="tel">010-2222-3333</column>
+            <column name="address">동의과학대학</column>
+            <column name="memo">부재시 전화주세요</column>
+            <column name="menu">햄버거</column>
+            <column name="price">5000</column>
+            <column name="ingredients">빵,패티,배추</column>
+            <column name="image">image3.jpg</column>
+        </table>
+        <table name="bill">
+            <column name="bill">18</column>
+            <column name="ID">gdool02</column>
+            <column name="name">김남억</column>
+            <column name="tel">0102846827</column>
+            <column name="address">대한민국 어디든지 갑니다.</column>
+            <column name="memo">빨리 넣어주세요.</column>
+            <column name="menu">비싼것</column>
+            <column name="price">17000</column>
+            <column name="ingredients">닭고기!</column>
+            <column name="image">13.jpg</column>
+        </table>
+        <table name="bill">
+            <column name="bill">19</column>
+            <column name="ID">jsp</column>
+            <column name="name">조프로</column>
+            <column name="tel">01099999999</column>
+            <column name="address">양정</column>
+            <column name="memo">없음</column>
+            <column name="menu">비싼것</column>
+            <column name="price">17000</column>
+            <column name="ingredients">닭고기!</column>
+            <column name="image">13.jpg</column>
+        </table>
+        <table name="bill">
+            <column name="bill">20</column>
+            <column name="ID">gdool02</column>
+            <column name="name">조영천</column>
+            <column name="tel">01011118888</column>
+            <column name="address">동의과학대학</column>
+            <column name="memo">망가뜨리지마</column>
+            <column name="menu">비싼것</column>
+            <column name="price">17000</column>
+            <column name="ingredients">닭고기!</column>
+            <column name="image">13.jpg</column>
+        </table>
+        <table name="bill">
+            <column name="bill">21</column>
+            <column name="ID">rudtjr</column>
+            <column name="name">a</column>
+            <column name="tel">a</column>
+            <column name="address">a</column>
+            <column name="memo">a</column>
+            <column name="menu">ff</column>
+            <column name="price">ff</column>
+            <column name="ingredients">gg</column>
+            <column name="image">nam.jpg</column>
+        </table>
+        <table name="bill">
+            <column name="bill">22</column>
+            <column name="ID">test</column>
+            <column name="name">test</column>
+            <column name="tel">test</column>
+            <column name="address">test</column>
+            <column name="memo">부재시 경비실에 맡겨주세요</column>
+            <column name="menu">aa</column>
+            <column name="price">aa</column>
+            <column name="ingredients">aa</column>
+            <column name="image"></column>
+        </table>
+        <table name="bill">
+            <column name="bill">23</column>
+            <column name="ID">rudtjrkkk</column>
+            <column name="name">ㅁㄴㅇ</column>
+            <column name="tel">ㄴㅁㅇ</column>
+            <column name="address">ㅁㄴㅇ</column>
+            <column name="memo">ㅁㄴㅇ</column>
+            <column name="menu">aa</column>
+            <column name="price">aa</column>
+            <column name="ingredients">aa</column>
+            <column name="image"></column>
+        </table>
+        <!-- 테이블 board -->
+        <table name="board">
+            <column name="idx">33</column>
+            <column name="title">안녕하세요</column>
+            <column name="writer">rudtjr</column>
+            <column name="regdate">2017-06-23 03:42:31</column>
+            <column name="count">2</column>
+            <column name="content">안녕하세요 저는 김경석입니다</column>
+        </table>
+        <table name="board">
+            <column name="idx">34</column>
+            <column name="title">저는 조영천입니다.</column>
+            <column name="writer">gdool02</column>
+            <column name="regdate">2017-06-23 04:06:02</column>
+            <column name="count">1</column>
+            <column name="content">안녕하세요</column>
+        </table>
+        <table name="board">
+            <column name="idx">35</column>
+            <column name="title">안녕하세요</column>
+            <column name="writer">gdool02</column>
+            <column name="regdate">2017-06-23 04:06:16</column>
+            <column name="count">2</column>
+            <column name="content">ㅇㅋ</column>
+        </table>
+        <table name="board">
+            <column name="idx">38</column>
+            <column name="title">이 아이디는 김경석아이디로 쓴글 입니다.</column>
+            <column name="writer">rudtjr</column>
+            <column name="regdate">2017-06-23 08:15:49</column>
+            <column name="count">6</column>
+            <column name="content">테스트입니다</column>
+        </table>
+        <table name="board">
+            <column name="idx">39</column>
+            <column name="title">이 아이디는 김경석아이디로 쓴글 입니다.</column>
+            <column name="writer">rudtjr</column>
+            <column name="regdate">2017-06-23 08:16:02</column>
+            <column name="count">2</column>
+            <column name="content">여기의 답변입니다</column>
+        </table>
+        <table name="board">
+            <column name="idx">41</column>
+            <column name="title">테스트글입니다</column>
+            <column name="writer">rudtjr</column>
+            <column name="regdate">2017-12-07 22:23:23</column>
+            <column name="count">4</column>
+            <column name="content">테ㅡㅡㅌ</column>
+        </table>
+        <table name="board">
+            <column name="idx">42</column>
+            <column name="title">테스트글입니다</column>
+            <column name="writer">rudtjr</column>
+            <column name="regdate">2017-06-23 12:32:54</column>
+            <column name="count">0</column>
+            <column name="content">경석이 아디디의 답변입니다.</column>
+        </table>
+        <table name="board">
+            <column name="idx">43</column>
+            <column name="title">안녕하세요</column>
+            <column name="writer">rudtjr</column>
+            <column name="regdate">2017-06-23 12:33:13</column>
+            <column name="count">0</column>
+            <column name="content">2페이지만드는 답변</column>
+        </table>
+        <table name="board">
+            <column name="idx">44</column>
+            <column name="title">tt</column>
+            <column name="writer">jsp</column>
+            <column name="regdate">2017-06-23 13:21:58</column>
+            <column name="count">8</column>
+            <column name="content">tt</column>
+        </table>
+        <table name="board">
+            <column name="idx">45</column>
+            <column name="title">tt</column>
+            <column name="writer">jsp</column>
+            <column name="regdate">2017-12-06 00:27:40</column>
+            <column name="count">1</column>
+            <column name="content">fff</column>
+        </table>
+        <table name="board">
+            <column name="idx">52</column>
+            <column name="title">test3ìì íì¤í¸</column>
+            <column name="writer">test1</column>
+            <column name="regdate">2017-12-07 22:31:34</column>
+            <column name="count">57</column>
+            <column name="content">testìì íì¤í¸</column>
+        </table>
+        <table name="board">
+            <column name="idx">53</column>
+            <column name="title">ㅁㅇㄹㄴㅇㄹ</column>
+            <column name="writer">test1</column>
+            <column name="regdate">2017-12-07 22:23:29</column>
+            <column name="count">22</column>
+            <column name="content">ㄴㅇㄹㅇㄹㄴㅇㄹ</column>
+        </table>
+        <table name="board">
+            <column name="idx">55</column>
+            <column name="title">ㅁㄴㅇㄴ</column>
+            <column name="writer">test1</column>
+            <column name="regdate">2017-12-22 22:01:48</column>
+            <column name="count">4</column>
+            <column name="content">ㅁㄴㅇㄴㅇ</column>
+        </table>
+        <table name="board">
+            <column name="idx">56</column>
+            <column name="title">수정테스트</column>
+            <column name="writer">test1</column>
+            <column name="regdate">2017-12-12 14:27:12</column>
+            <column name="count">10</column>
+            <column name="content">수정테스트</column>
+        </table>
+        <table name="board">
+            <column name="idx">57</column>
+            <column name="title">ttttt</column>
+            <column name="writer">test4</column>
+            <column name="regdate">2017-12-16 15:22:27</column>
+            <column name="count">0</column>
+            <column name="content">ttttt</column>
+        </table>
+        <!-- 테이블 main_board_reply -->
+        <!-- 테이블 menu -->
+        <table name="menu">
+            <column name="menunum">11</column>
+            <column name="menu">떡볶이</column>
+            <column name="mprice">5000</column>
+            <column name="mingredients">떡,고추장,파</column>
+            <column name="mimage">image1.jpg</column>
+        </table>
+        <table name="menu">
+            <column name="menunum">12</column>
+            <column name="menu">볶음밥</column>
+            <column name="mprice">5000</column>
+            <column name="mingredients">파,밥,햄</column>
+            <column name="mimage">image2.jpg</column>
+        </table>
+        <table name="menu">
+            <column name="menunum">13</column>
+            <column name="menu">햄버거</column>
+            <column name="mprice">3000</column>
+            <column name="mingredients">빵,패티,배추</column>
+            <column name="mimage">image3.jpg</column>
+        </table>
+        <table name="menu">
+            <column name="menunum">14</column>
+            <column name="menu">비싼것</column>
+            <column name="mprice">17000</column>
+            <column name="mingredients">닭고기!</column>
+            <column name="mimage">13.jpg</column>
+        </table>
+        <table name="menu">
+            <column name="menunum">15</column>
+            <column name="menu">ff</column>
+            <column name="mprice">ff</column>
+            <column name="mingredients">gg</column>
+            <column name="mimage">nam.jpg</column>
+        </table>
+        <table name="menu">
+            <column name="menunum">16</column>
+            <column name="menu">a</column>
+            <column name="mprice">a</column>
+            <column name="mingredients">a</column>
+            <column name="mimage"></column>
+        </table>
+        <table name="menu">
+            <column name="menunum">17</column>
+            <column name="menu">aa</column>
+            <column name="mprice">aa</column>
+            <column name="mingredients">aa</column>
+            <column name="mimage"></column>
+        </table>
+        <!-- 테이블 recipe -->
+        <table name="recipe">
+            <column name="recipe">20</column>
+            <column name="price">5000</column>
+            <column name="title">떡볶이</column>
+            <column name="ingredients">파,떡,고추장</column>
+            <column name="method">파를자르고 떡을 넣고 고추장을 넣는다.</column>
+            <column name="image">image1.jpg</column>
+        </table>
+        <table name="recipe">
+            <column name="recipe">21</column>
+            <column name="price">5000</column>
+            <column name="title">햄버거</column>
+            <column name="ingredients">빵,패티,배추</column>
+            <column name="method">빵안에 패티와 배추를 넣는다.</column>
+            <column name="image">image3 - copy.jpg</column>
+        </table>
+        <table name="recipe">
+            <column name="recipe">22</column>
+            <column name="price">15000</column>
+            <column name="title">맛있는 냠냠</column>
+            <column name="ingredients">흐흫</column>
+            <column name="method">하핳</column>
+            <column name="image">14.jpg</column>
+        </table>
+        <table name="recipe">
+            <column name="recipe">23</column>
+            <column name="price">5000</column>
+            <column name="title">말랑카이 볶음밥</column>
+            <column name="ingredients">누런 쌀/ 양파/ 당근/ 호박/ 완두콩/ 참기름/ 카레가루</column>
+            <column name="method">누런 쌀로 밥을 짓고 양파와 당근을 송송썰어 잘 익은 완두콩에 참기름 두방을 톡톡</column>
+            <column name="image">image2 - copy.jpg</column>
+        </table>
+        <table name="recipe">
+            <column name="recipe">24</column>
+            <column name="price">10000</column>
+            <column name="title">전복</column>
+            <column name="ingredients">전복</column>
+            <column name="method">버터바르고 굽는다</column>
+            <column name="image">image4.jpg</column>
+        </table>
+        <table name="recipe">
+            <column name="recipe">25</column>
+            <column name="price">15000</column>
+            <column name="title">hh</column>
+            <column name="ingredients">hh</column>
+            <column name="method">hh</column>
+            <column name="image">nam.jpg</column>
+        </table>
+        <!-- 테이블 user -->
+        <table name="user">
+            <column name="name">김경석</column>
+            <column name="id">rudtjr</column>
+            <column name="password">kkk</column>
+            <column name="nic">경서키</column>
+            <column name="telNo">01028469273</column>
+            <column name="eMail">rudtjr@naver.com</column>
+            <column name="address">부산 양정이다</column>
+        </table>
+        <table name="user">
+            <column name="name">조영천</column>
+            <column name="id">gdool02</column>
+            <column name="password">dmdrk</column>
+            <column name="nic">응가방구</column>
+            <column name="telNo">01028468312</column>
+            <column name="eMail">gdool00@naver.com</column>
+            <column name="address">부산 정관</column>
+        </table>
+        <table name="user">
+            <column name="name">test1</column>
+            <column name="id">test1</column>
+            <column name="password">test1</column>
+            <column name="nic">nullddddd</column>
+            <column name="telNo">nullddddd</column>
+            <column name="eMail">nulldddd</column>
+            <column name="address">nullddddd</column>
+        </table>
+        <table name="user">
+            <column name="name">김경석</column>
+            <column name="id">rudtjrkkk</column>
+            <column name="password">rudtjr1126</column>
+            <column name="nic">김경석</column>
+            <column name="telNo">01050380554</column>
+            <column name="eMail">rudtjrkkk@naver.com</column>
+            <column name="address">양정동</column>
+        </table>
+        <table name="user">
+            <column name="name">test2</column>
+            <column name="id">test2</column>
+            <column name="password">test2</column>
+            <column name="nic">test2</column>
+            <column name="telNo">test2</column>
+            <column name="eMail">test2</column>
+            <column name="address">test2</column>
+        </table>
+        <table name="user">
+            <column name="name">test3</column>
+            <column name="id">test3</column>
+            <column name="password">test3</column>
+            <column name="nic">test3</column>
+            <column name="telNo">test3</column>
+            <column name="eMail">test3</column>
+            <column name="address">test3</column>
+        </table>
+        <table name="user">
+            <column name="name">test4</column>
+            <column name="id">test4</column>
+            <column name="password">test4</column>
+            <column name="nic">test4</column>
+            <column name="telNo">test4</column>
+            <column name="eMail">test4</column>
+            <column name="address">test4</column>
+        </table>
+    </database>
+</pma_xml_export>
