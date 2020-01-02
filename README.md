@@ -1,19 +1,19 @@
 #[JSP-Web-site-for-single-meal-Recipe-Website]
 * This project contains DB files and usesd mysql
-* Includes the following features:
-<p>&ndsp;1. Login</p>
-<p>2. Sign up for membership</p>
-<p>3. Introduction</p>
-<p>4. Order</p>
-<p>5. Recipe</p>
-<p>6.Recipe vedio</p>
-<p>7.QnA</p>
-<p>8.freeBoard</p>
-<p>9.Creating postings</p>
-<p>10.Viewing postings</p>
-<p>11.Reply to the Bulletin Board</p>
-<p>12.Modifying postings</p>
-<p>13.Delete posting</p>
+[Includes the following features]
+1. Login
+2. Sign up for membership
+3. Introduction
+4. Order
+5. Recipe
+6.Recipe vedio
+7.QnA
+8.freeBoard
+9.Creating postings
+10.Viewing postings
+11.Reply to the Bulletin Board
+12.Modifying postings
+13.Delete posting
 
 # [Start Bootstrap](http://startbootstrap.com/) - [Modern Business](http://startbootstrap.com/template-overviews/modern-business/)
 
