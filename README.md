@@ -1,3 +1,20 @@
+#[JSP-Web-site-for-single-meal-Recipe-Website]
+* This project contains DB files and usesd mysql
+* Includes the following features:
+1. Login
+2. Sign up for membership
+3. Introduction
+4. Order
+5. Recipe
+6.Recipe vedio
+7.QnA
+8.freeBoard
+9.Creating postings
+10.Viewing postings
+11.Reply to the Bulletin Board
+12.Modifying postings
+13.Delete posting
+
 # [Start Bootstrap](http://startbootstrap.com/) - [Modern Business](http://startbootstrap.com/template-overviews/modern-business/)
 
 [Modern Business](http://startbootstrap.com/template-overviews/modern-business/) is a multipurpose, full website template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This template includes 17 unique HTML pages and a working PHP contact form.
