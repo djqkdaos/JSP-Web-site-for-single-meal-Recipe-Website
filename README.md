@@ -6,18 +6,18 @@
 * This project contains DB files and usesd mysql
 
 * [Includes the following features]
-1. Login
-2. Sign up for membership
-3. Introduction
-4. Order
-5. Recipe
-6.Recipe vedio
-7.QnA
-8.freeBoard
-9.Creating postings
-10.Viewing postings
-11.Reply to the Bulletin Board
-12.Modifying postings
+1. Login<br>
+2. Sign up for membership<br>
+3. Introduction<br>
+4. Order<br>
+5. Recipe<br>
+6.Recipe vedio<br>
+7.QnA<br>
+8.freeBoard<br>
+9.Creating postings<br>
+10.Viewing postings<br>
+11.Reply to the Bulletin Board<br>
+12.Modifying postings<br>
 13.Delete posting
 
 # [Start Bootstrap](http://startbootstrap.com/) - [Modern Business](http://startbootstrap.com/template-overviews/modern-business/)
