@@ -6,6 +6,7 @@
 * This project contains DB files and usesd mysql
 
 * [Includes the following features]
+
 1. Login<br>
 2. Sign up for membership<br>
 3. Introduction<br>
